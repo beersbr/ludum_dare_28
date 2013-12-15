@@ -40,6 +40,7 @@ namespace LD28
         SDL_Renderer* renderContext;
         
         int frameStart, frameTime;
+        int frameCount;
     };
 }
 

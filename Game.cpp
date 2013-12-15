@@ -59,6 +59,8 @@ namespace LD28
             Update();
             Render();
             
+            
+            frameCount += 1;
             frameTime = SDL_GetTicks() - frameStart;
             
             if(frameStart < DelayTime)
