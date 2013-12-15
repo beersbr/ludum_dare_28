@@ -25,7 +25,8 @@ namespace LD28
         
         
     private:
-        Controller();
+        Controller(){};
+        Controller(Controller const&){};
         static Controller* instance;
         
         const Uint8* keyState;

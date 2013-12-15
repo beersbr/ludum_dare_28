@@ -16,11 +16,13 @@ namespace LD28
     {
         if(instance == nullptr)
         {
-            instance = new Controller();
+            instance = new Controller;
         }
         
         return instance;
     }
+    
+    
     
     void Controller::Update()
     {
