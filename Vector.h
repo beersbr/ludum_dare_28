@@ -1,12 +1,3 @@
-//
-// Created by Brett Beers on 8/19/13.
-// Copyright (c) 2013 ___FULLUSERNAME___. All rights reserved.
-//
-// To change the template use AppCode | Preferences | File Templates.
-//
-
-
-
 #ifndef __Vector_H_
 #define __Vector_H_
 

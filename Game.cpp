@@ -1,20 +1,10 @@
-//
-//  Game.cpp
-//  ludum_dare_28
-//
-//  Created by Brett Beers on 12/14/13.
-//  Copyright (c) 2013 Brett Beers. All rights reserved.
-//
-
 #include "Game.h"
 
 namespace LD28
 {
     Game::Game()
     {
-        isRunning = false;
-        
-        
+        gameState = STARTUP;
     }
     
     
@@ -49,9 +39,9 @@ namespace LD28
         const float TargetFps = 60.0f;
         const float DelayTime = 1000.0f / TargetFps;
         
-        isRunning = true;
+        gameState = RUNNING;
         
-        while(isRunning)
+        while(gameState == RUNNING)
         {
             frameStart = SDL_GetTicks();
             
@@ -94,7 +84,7 @@ namespace LD28
             switch(event.type)
             {
                 case SDL_QUIT:
-                    isRunning = false;
+                    gameState = QUIT;
                     break;
                     
                 default:

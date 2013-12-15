@@ -1,11 +1,3 @@
-//
-//  Game.h
-//  ludum_dare_28
-//
-//  Created by Brett Beers on 12/14/13.
-//  Copyright (c) 2013 Brett Beers. All rights reserved.
-//
-
 #ifndef __ludum_dare_28__Game__
 #define __ludum_dare_28__Game__
 
@@ -19,6 +11,14 @@ namespace LD28
         SDL_INIT_ERROR,
         SDL_WINDOW_INIT_ERROR,
         SDL_RENDERER_INIT_ERROR
+    };
+    
+    enum GAME_STATE{
+        STARTUP,
+        RUNNING,
+        PAUSED,
+        MENU,
+        QUIT
     };
     
     class Game
@@ -35,12 +35,12 @@ namespace LD28
         void Clean();
         
     private:
-        bool isRunning;
         SDL_Window* window;
         SDL_Renderer* renderContext;
         
         int frameStart, frameTime;
         int frameCount;
+        GAME_STATE gameState;
     };
 }
 
