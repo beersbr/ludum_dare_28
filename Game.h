@@ -10,6 +10,7 @@
 #define __ludum_dare_28__Game__
 
 #include <iostream>
+#include <SDL2/SDL.h>
 
 namespace LD28
 {
