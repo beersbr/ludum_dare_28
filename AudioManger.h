@@ -42,7 +42,7 @@ namespace LD28
         
         AudioManager();
         AudioManager(const AudioManager&);
-        AudioManager &operator=(const AudioManager&);
+        AudioManager& operator=(const AudioManager&);
         
         std::map<std::string, Mix_Chunk*> sfxs;
         std::map<std::string, Mix_Music*> music;

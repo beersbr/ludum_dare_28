@@ -4,7 +4,7 @@ namespace LD28
 {
     Controller* Controller::instance = nullptr;
     
-    Controller* Controller::GetController()
+    Controller* Controller::Instance()
     {
         if(instance == nullptr)
         {

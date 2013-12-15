@@ -9,11 +9,10 @@ namespace LD28
     class Controller
     {
     public:
-        static Controller* GetController();
+        static Controller* Instance();
         
         void Update();
         bool KeyDown(const SDL_Scancode key) const;
-        void ClearKeys();
         
         
     private:
