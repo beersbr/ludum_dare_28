@@ -14,12 +14,12 @@ namespace LD28
     
     Controller* Controller::GetController()
     {
-        if(Controller::instance == nullptr)
+        if(instance == nullptr)
         {
-            Controller::instance = new Controller::Controller();
+            instance = new Controller();
         }
         
-        return Controller::instance;
+        return instance;
     }
     
     void Controller::Update()
