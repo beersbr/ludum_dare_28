@@ -5,7 +5,7 @@
 // To change the template use AppCode | Preferences | File Templates.
 //
 
-
+#define M_PI 3.141592654
 
 #ifndef __Vector_H_
 #define __Vector_H_

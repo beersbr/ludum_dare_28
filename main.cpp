@@ -15,4 +15,5 @@ int main(int argv, char* argc[])
         std::cout << "Unrecoverable error: " << exception << std::endl;
     }
     
+	return 0;
 }
