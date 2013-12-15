@@ -1,15 +1,5 @@
-<<<<<<< HEAD
-=======
-//
-// Created by Brett Beers on 8/19/13.
-// Copyright (c) 2013 ___FULLUSERNAME___. All rights reserved.
-//
-// To change the template use AppCode | Preferences | File Templates.
-//
-
 #define M_PI 3.141592654
 
->>>>>>> 02ff996c575927e8ddbddcfad506983bd3e03280
 #ifndef __Vector_H_
 #define __Vector_H_
 

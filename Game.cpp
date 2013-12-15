@@ -72,7 +72,7 @@ namespace LD28
     
     void Game::Update()
     {
-        Controller::GetController()->Update();
+        Controller::Instance()->Update();
     }
     
     
