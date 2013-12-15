@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <SDL2/SDL.h>
+#include "Controller.h"
 
 namespace LD28
 {
