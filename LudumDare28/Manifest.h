@@ -3,6 +3,10 @@
 //Manifest class, describes the asset by name, and what should be loaded
 
 #include "Common.h"
+#include <rapidjson\document.h>
+#include <iostream>
+#include <sstream>
+#include <fstream>
 
 enum class EntType {CHARACTER, PROJECTILE, OBJECT};
 
@@ -12,7 +16,7 @@ namespace LD28
 	{
 	public:
 	private:
-		virtual void parseManifest() = 0;
+		virtual bool parseManifest() = 0;
 	protected:
 		GameString entName; // Name of object, essntial to load and parse manifest
 		EntType entType;
