@@ -1,5 +1,3 @@
-#define M_PI 3.141592654
-
 #ifndef __Vector_H_
 #define __Vector_H_
 

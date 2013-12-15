@@ -11,7 +11,7 @@ namespace LD28
 		CharacterManifest(GameString charName);
 		~CharacterManifest();
 	private:
-		virtual void parseManifest();
+		virtual bool parseManifest();
 		void findFile();
 		//We need members here to define hit/hurt boxes
 		//Also need members for animations defining moves
