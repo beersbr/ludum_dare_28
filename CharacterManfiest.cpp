@@ -72,7 +72,22 @@ namespace LD28
 		//															"hurtBoxes" : [ [offx, offy, width, height], ...]
 		//														}, { ... } ]
 		//				}
-        
-        return false;
+		// "Animations" : {
+		//					 "ForwardWalk": {
+		//									"count" : <i:numFrames>
+		//									"speed" : <i:speed>
+		//									"frameData" : [ { ... } , { ... } ] 
+		//					 "BackwardWalk": { ... }
+		//					 "ForwardDash" : { ... }
+		//					 "BackwardDash" : { ... } 
+		//					 "Jump" :{ "count" : <i:numFrames>
+		//							   "speed" : <i:speed>
+		//							   "height" : <i: height>
+		//							 }
+		//					"BlockHigh" : { ... }
+		//					"BlockLow"  : { ... }
+		//
+
+		return true;
 	}
 }
