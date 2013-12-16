@@ -37,6 +37,8 @@ namespace LD28
     private:
         std::vector<SDL_Rect> frames;
         Uint8 maxFrames;
+        
+        
     };
 }
 
