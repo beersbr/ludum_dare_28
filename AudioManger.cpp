@@ -27,6 +27,11 @@ namespace LD28
         Mix_OpenAudio(22050, AUDIO_S16, 2, 4096);
     }
     
+    void AudioManager::Clean()
+    {
+        
+    }
+    
     bool AudioManager::Load(std::string fileName, std::string key, SOUND_TYPE type)
     {
         bool success = false;
@@ -62,14 +67,20 @@ namespace LD28
         return success;
     }
     
-    void AudioManager::PlaySound(std::string key, int loop)
+    int AudioManager::PlaySound(std::string key, int loop)
     {
-        Mix_PlayChannel(-1, sfxs[key], loop);
+        return (Mix_PlayChannel(-1, sfxs[key], loop));
     }
     
     void AudioManager::PlayMusic(std::string key, int loop)
     {
         Mix_PlayMusic(music[key], loop);
+    }
+    
+//    If channel is not set then we stop all sounds
+    void AudioManager::StopSfxs(const int channel = -1) const
+    {
+        Mix_HaltChannel(channel);
     }
     
     void AudioManager::StopMusic()

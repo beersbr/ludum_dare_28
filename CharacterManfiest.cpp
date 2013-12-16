@@ -72,5 +72,7 @@ namespace LD28
 		//															"hurtBoxes" : [ [offx, offy, width, height], ...]
 		//														}, { ... } ]
 		//				}
+        
+        return false;
 	}
 }

@@ -32,9 +32,12 @@ namespace LD28
         
         bool Load(std::string fileName, std::string key, SOUND_TYPE type);
         
-        void PlaySound(std::string key, int loop);
-        void PlayMusic(std::string key, int loop);
+        void Clean();
         
+        int PlaySound(std::string key, const int loop);
+        void PlayMusic(std::string key, const int loop);
+        
+        void StopSfxs(const int channel) const;
         void StopMusic();
         
     private:

@@ -3,7 +3,7 @@
 //Manifest class, describes the asset by name, and what should be loaded
 
 #include "Common.h"
-#include <rapidjson\document.h>
+#include <rapidjson/document.h>
 #include <iostream>
 #include <sstream>
 #include <fstream>
